@@ -1,0 +1,197 @@
+.hero-section {
+  height: auto;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #0B132B, #1C2541);
+  color: #E0E0E0;
+  overflow: visible;
+  margin-bottom: 0;
+}
+
+/* LEFT TEXT */
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-left h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.hero-left span {
+  background: linear-gradient(135deg, #529bd6, #0d2343);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-left p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.dashboard-preview {
+  transform: scale(1.05);
+}
+
+/* CTA BUTTON */
+.cta-btn {
+  margin-top: 25px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #529bd6, #0d2343);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  transition: all 0.8s ease;
+  color: white;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(135deg, #0d2343, #529bd6);
+  transform: translateY(-3px);
+}
+
+/* RIGHT SIDE */
+.hero-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+
+/* HERO APP UI */
+.app-ui {
+  width: 350px;
+  height: 480px;
+  border-radius: 30px;
+  padding: 25px;
+  background: rgba(28, 37, 65, 0.7);
+  backdrop-filter: blur(15px);
+  color: #E0E0E0;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* BALANCE BOX */
+.balance-box {
+  background: linear-gradient(135deg, #529bd6, #0d2343);
+  padding: 18px;
+  border-radius: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance-box p {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.balance-box h2 {
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+/* STATS */
+.stats {
+  margin-top: 15px;
+}
+
+/* CARD */
+.card {
+  margin-bottom: 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card span {
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+/* COLORS */
+.income strong {
+  color: #22c55e;
+}
+
+.expense strong {
+  color: #ef4444;
+}
+
+.savings strong {
+  color: #3b82f6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+  .hero-section {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+  }
+
+  .hero-right {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .app-ui {
+    width: 300px;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .hero-left h1 {
+    font-size: 1.9rem;
+  }
+
+  .cta-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .app-ui {
+    padding: 20px;
+    border-radius: 25px;
+  }
+
+}

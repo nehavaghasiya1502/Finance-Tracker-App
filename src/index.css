@@ -5,9 +5,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0B132B, #1C2541);
+  color:#E0E0E0;
 }
 
+h1,h2,h3,p{
+  margin-top:0;
+}
+* {
+  box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+:root {
+  /* LIGHT THEME DEFAULT */
+
+  --bg-color: #F8F9FA;
+  --primary-color: #0052CC;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+
+  --income-color: #2ECC71;
+  --expense-color: #E74C3C;
+  --savings-color: #0052CC;
+}
+body.dark {
+  --bg-color: #0B132B;
+  --primary-color: #4D96FF;
+  --text-color: #E0E0E0;
+  --card-bg: #1C2541;
+
+  --income-color: #2ECC71;
+  --expense-color: #E74C3C;
+  --savings-color: #4D96FF;
 }

@@ -1,0 +1,92 @@
+.cta-section{
+  padding:120px 8%;
+  display:flex;
+  justify-content:center;
+
+  background: linear-gradient(135deg,#0B132B,#1C2541);
+}
+
+/* CTA BOX */
+
+.cta-container{
+
+  max-width:700px;
+  text-align:center;
+
+  padding:60px 40px;
+
+  border-radius:25px;
+
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(15px);
+
+  border:1px solid rgba(82,155,214,0.25);
+
+  box-shadow:0 20px 50px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+
+.cta-container h2{
+
+  font-size:34px;
+  margin-bottom:15px;
+
+  background:linear-gradient(135deg,#529bd6,#0d2343);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* TEXT */
+
+.cta-container p{
+  font-size:16px;
+  opacity:0.85;
+  margin-bottom:30px;
+}
+
+/* BUTTON */
+
+.cta-btn{
+
+  padding:14px 36px;
+
+  border:none;
+  border-radius:8px;
+
+  background:linear-gradient(135deg,#529bd6,#0d2343);
+
+  color:white;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.cta-btn:hover{
+
+  transform:translateY(-3px);
+
+  background:linear-gradient(135deg,#0d2343,#529bd6);
+
+  box-shadow:0 8px 25px rgba(82,155,214,0.4);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .cta-section{
+    padding:90px 6%;
+  }
+
+  .cta-container{
+    padding:40px 25px;
+  }
+
+  .cta-container h2{
+    font-size:26px;
+  }
+
+}
